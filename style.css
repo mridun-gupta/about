@@ -1,9 +1,10 @@
+/* class-based and id-based Stylings */
 .gap-top {
-    margin-top: 50px;
+    margin-top: 5rem;
 }
 
 .gap-bottom {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
 
 .highlight {
@@ -12,14 +13,14 @@
 }
 
 .note {
-    margin-left: 15px;
+    margin-left: 1.5rem;
     font-weight: bold;
 }
 
 .sharethis-inline-share-buttons {
-    border: #AD88F2 2px solid;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    border: #AD88F2 0.2rem solid;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 #lh-low {
@@ -27,7 +28,7 @@
 }
 
 .postscript {
-    font-size: x-small;
+    font-size: 1rem;
 }
 
 .center {
@@ -35,10 +36,11 @@
 }
 
 .शायरी{
-    font-size: small;
+    font-size: 1.25rem;
     white-space: pre-line;
 }
 
+/* General Stylings */
 * {
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
@@ -46,17 +48,21 @@
     text-decoration: none;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body {
-    background-size: 50px 50px;
-    background-image: radial-gradient(circle, #808F85 1.25px, #000 1px) !important;
+    background-size: 5rem 5rem;
+    background-image: radial-gradient(circle, #808F85 0.125rem, #000 0.1rem) !important;
 }
 
 article {
-    padding-top: 75px;
-    padding-bottom: 150px;
+    padding-top: 7.5rem;
+    padding-bottom: 15rem;
     padding-left: 50vh;
     padding-right: 50vh;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 1.75;
 }
 
@@ -68,13 +74,13 @@ h6 {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 h6 {
-    font-size: 15px;
+    font-size: 1.5rem;
 }
