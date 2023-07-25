@@ -17,7 +17,7 @@
     font-weight: bold;
 }
 
-.sharethis-inline-share-buttons {
+.grid {
     border: #AD88F2 0.2rem solid;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -29,13 +29,14 @@
 
 .postscript {
     font-size: 1rem;
+    margin-left: 1rem !important;
 }
 
 .center {
     text-align: center;
 }
 
-.शायरी{
+.शायरी {
     font-size: 1.25rem;
     white-space: pre-line;
 }
@@ -48,7 +49,7 @@
     text-decoration: none;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
@@ -58,10 +59,7 @@ body {
 }
 
 article {
-    padding-top: 7.5rem;
-    padding-bottom: 15rem;
-    padding-left: 50vh;
-    padding-right: 50vh;
+    padding: 7.5rem 50vh 15rem;
     font-size: 1.5rem;
     line-height: 1.75;
 }
@@ -83,4 +81,25 @@ h3 {
 
 h6 {
     font-size: 1.5rem;
+}
+
+/* @media Queries */
+@media (max-width: 769px) {
+    html {
+        font-size: 50%;
+    }
+
+    #lh-low {
+        line-height: 1;
+    }
+
+    article {
+        padding: 7.5rem 0rem 15rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    html {
+        font-size: 150%;
+    }
 }

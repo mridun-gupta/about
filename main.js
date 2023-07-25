@@ -18,9 +18,7 @@ function updateशायरी() {
 
     if (शायरीDisplay) {
         const शायरी = getशायरी();
-        शायरीDisplay.textContent = शायरी;
-    } else {
-        console.error("Element with ID 'शायरीDisplay' not found.");
+        शायरीDisplay.innerHTML = शायरी;
     }
 }
 
