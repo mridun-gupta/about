@@ -41,6 +41,22 @@
     white-space: pre-line;
 }
 
+#xiaomi-logo {
+    width: 2.5rem;
+    margin-right: 0.5rem !important;
+}
+
+.short-introduction {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem !important;
+}
+
+.spacer {
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+}
+
 /* General Stylings */
 * {
     font-family: 'Inter', sans-serif;
