@@ -76,12 +76,11 @@
 
 #ticker{
     background-color: #AD88F2;
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
     font-size: 2.5rem;
     border-radius: 0.2rem;
     white-space: nowrap;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     overflow: hidden;
