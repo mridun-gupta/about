@@ -58,7 +58,7 @@
     margin-right: 0.5rem;
 }
 
-.announcements {
+.announcements{
     display: flex;
     list-style: none;
     margin: 0;
@@ -66,7 +66,7 @@
     animation: scroll 25s infinite linear;
 }
 
-#IN-flag {
+#IN-flag{
     background-image: url("https://knowindia.india.gov.in/assets/images/national_flag_inner.jpg");
     background-size: cover;
     background-position: center;
@@ -74,19 +74,19 @@
     color: transparent;
 }
 
-#ticker {
+#ticker{
     background-color: #AD88F2;
-    padding: 0;
-    margin: 0;
+    padding: none;
+    margin: none;
     font-size: 2.5rem;
     border-radius: 0.2rem;
     white-space: nowrap;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
-    color: #FFFFFF;
 }
 
-.announcements span:nth-child(2) {
+.announcements span:nth-child(2){
     font-weight: bold;
 }
 
@@ -111,7 +111,6 @@ html {
 }
 
 body {
-    max-width: 100vw;
     background-size: 5rem 5rem;
     background-image: radial-gradient(circle, #808F85 0.125rem, #000000 0.1rem) !important;
 }
@@ -141,7 +140,7 @@ h6 {
     font-size: 1.5rem;
 }
 
-html::selection {
+html::selection{
     background-color: #AD88F2;
     color: #FFFFFF;
 }
@@ -175,6 +174,6 @@ html::selection {
     }
 
     to {
-        transform: translate(-2050px);
+        transform: translate(-750px);
     }
 }
