@@ -29,3 +29,19 @@ function updateशायरी() {
 }
 
 document.addEventListener("DOMContentLoaded", updateशायरी);
+
+function redirectContact() {
+    var currentDomain = window.location.hostname;
+
+    if (currentDomain === 'www.mridungupta.tech') {
+        window.location.href = 'https://contact.mridungupta.tech';
+    } else if (currentDomain === 'www.mridungupta.me') {
+        window.location.href = 'https://contact.mridungupta.me';
+    } else if (currentDomain === 'contact.mridungupta.eu.org') {
+        window.location.href = 'https://contact.mridungupta.eu.org';
+    } else if (currentDomain === 'contact.mridungupta.live') {
+        window.location.href = 'https://contact.mridungupta.live';
+    } else {
+        console.log("Sorry! This isn't the real website run by 'Mridun Gupta'. Double check the official website for authenticity.");
+    }
+}
