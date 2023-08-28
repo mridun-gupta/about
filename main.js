@@ -37,9 +37,9 @@ function redirectContact() {
         window.location.href = 'https://contact.mridungupta.tech';
     } else if (currentDomain === 'www.mridungupta.me') {
         window.location.href = 'https://contact.mridungupta.me';
-    } else if (currentDomain === 'contact.mridungupta.eu.org') {
+    } else if (currentDomain === 'www.mridungupta.eu.org') {
         window.location.href = 'https://contact.mridungupta.eu.org';
-    } else if (currentDomain === 'contact.mridungupta.live') {
+    } else if (currentDomain === 'www.mridungupta.live') {
         window.location.href = 'https://contact.mridungupta.live';
     } else {
         console.log("Sorry! This isn't the real website run by 'Mridun Gupta'. Double check the official website for authenticity.");
