@@ -33,6 +33,7 @@ function updateशायरी() {
 
 document.addEventListener("DOMContentLoaded", updateशायरी);
 
+/* redirectContact Logic */
 function redirectContact() {
     var currentDomain = window.location.hostname;
 
