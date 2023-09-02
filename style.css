@@ -192,6 +192,6 @@ html::selection {
     }
 
     to {
-        transform: translate(-750px);
+        transform: translate(-100%);
     }
 }

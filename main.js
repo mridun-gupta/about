@@ -2,7 +2,7 @@
 console.log("#     #                                          #####\n##   ##  #####   #  #####   #    #  #    #      #     #  #    #  #####   #####    ##\n# # # #  #    #  #  #    #  #    #  ##   #      #        #    #  #    #    #     #  #\n#  #  #  #    #  #  #    #  #    #  # #  #      #  ####  #    #  #    #    #    #    #\n#     #  #####   #  #    #  #    #  #  # #      #     #  #    #  #####     #    ######\n#     #  #   #   #  #    #  #    #  #   ##      #     #  #    #  #         #    #    #\n#     #  #    #  #  #####    ####   #    #       #####    ####   #         #    #    #");
 
 /* Fetch शायरी */
-const शायरीContent = [
+const शायरीList = [
     "मैं हस्ता रहता हूँ, किसी से कुछ नहीं कहता |\nजो भी दर्द मिल रहा है, उसको हस से सहता हूँ |\nक्योंकि जिसके इंतज़ार में बैठा हूँ वो घड़ी जल्द ही आएगी, और मेहनत मेरी जरूर रंग लाएगी |\nतब मेरी किस्मत बदल जाएगी, जिनहोने मुझे छोड़ा था पहले अब वो भी मेरे साथ  तुम्हे दिख जाएगी |",
     "खूबसूरत बहुत है रास्ता तू खो जाएगा, जो सोचा है वो मुकाम भी मिल जायेगा |\nअभी जी भर के संघर्ष कर ले, कुछ याद आये ना आये, यह वक्त तुझे जरूर याद आएगा |",
     "दर्द की शाम हो, या सुख का सवेरा हो |\nसब गवारा है मुझे, साथ बस तेरा हो |",
@@ -18,8 +18,8 @@ const शायरीContent = [
 ];
 
 function getशायरी() {
-    const randomIndex = Math.floor(Math.random() * शायरीContent.length);
-    return शायरीContent[randomIndex];
+    const randomIndex = Math.floor(Math.random() * शायरीList.length);
+    return शायरीList[randomIndex];
 };
 
 function updateशायरी() {
@@ -57,3 +57,23 @@ function redirectContact() {
         console.log("Sorry! This isn't the real website run by 'Mridun Gupta'. Double check the official website for authenticity.");
     }
 }
+
+/* Fetch specialEvents*/
+document.addEventListener("DOMContentLoaded", function () {
+    const eventsDisplay = document.getElementById('special-events');
+    const eventsList = [
+        "on the smooth landing of LVM3-M4 / Chandrayaan-3",
+        "on the awesome launch of PSLV-C57 / Aditya L1! ",
+    ];
+
+    let eventIndex = 0;
+
+    function updateEvent() {
+        eventsDisplay.textContent = eventsList[eventIndex];
+        eventIndex = (eventIndex + 1) % eventsList.length;
+    }
+
+    updateEvent();
+
+    setInterval(updateEvent, 25000);
+});
