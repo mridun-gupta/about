@@ -101,7 +101,7 @@
 
 ::-webkit-scrollbar-thumb {
     background: #FFFFFF;
-    border-radius: 5px
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
