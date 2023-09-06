@@ -68,8 +68,8 @@
 
 #IN-flag {
     background-image: url("https://knowindia.india.gov.in/assets/images/national_flag_inner.jpg");
-    background-size: cover;
-    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
     -webkit-background-clip: text;
     color: transparent;
 }

@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const eventsDisplay = document.getElementById('special-events');
     const eventsList = [
         "on the smooth landing of LVM3-M4 / Chandrayaan-3",
-        "on the awesome launch of PSLV-C57 / Aditya L1! ",
+        "on the awesome launch of PSLV-C57 / Aditya L1",
     ];
 
     let eventIndex = 0;
@@ -76,4 +76,4 @@ document.addEventListener("DOMContentLoaded", function () {
     updateEvent();
 
     setInterval(updateEvent, 25000);
-});
+})
