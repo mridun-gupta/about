@@ -4,7 +4,8 @@
 <head>
     <title>मृदुन गुप्ता | Mridun Gupta</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="preloader.css">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
@@ -29,96 +30,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My digital autobiography">
+    <meta http-equiv="refresh" content="5; url=home.html">
 
     <!-- JS Scripts -->
     <script type='text/javascript' src='main.js'></script>
-    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=64bc29501734a80012bd6046&product=sop' async='async'></script>
-    <!-- Firebase Cloud Messaging -->
-    <script>
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker.register("firebase-messaging-sw.js");
-            });
-        }
-    </script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-messaging-compat.js"></script>
-    <script src="firebase-messaging-configuration.js"></script>
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "i4syiv92ax");
-    </script>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Ticker -->
-        <div id="ticker">
-            <ul class="announcements">
-                <li>Well done, <b><span id="IN-flag">BHARAT</span></b>, <span id="special-events"></span>!</li>
-            </ul>
+    <!-- Preloader -->
+    <div id="preloader-container">
+        <div id="preloader-animation">
+            <video width="100" height="80" autoplay muted>
+                <source src="assets/preloader.webm" type="video/webm">
+            </video>
         </div>
-        <article dir="ltr">
-            <!-- Introduction -->
-            <div>
-                <h1 id="lh-low"><span class="highlight">मृदुन गुप्ता</span> (Mridun Gupta)</h1>
-                <h6 id="lh-low" class="short-introduction">
-                    <img id="xiaomi-logo" src="https://i01.appmifile.com/webfile/globalimg/mobile/logo/mi.png" alt="Xiaomi Logo"><span class="highlight">Fan</span>
-                    <span class="spacer">|</span>
-                    <span class="highlight">Techno Guy</span>
-                    <span class="spacer">|</span>
-                    <img id="pw-logo" src="https://www.pw.live/study/assets/icons/logow.png" alt="PW Logo"><span class="highlight">Student</span>
-                </h6>
-                <p>I'm a newbie web developer, chilling in the <span class="highlight">Republic of Bharat. <span class="highlight">Love Coding</span>.</p>
-                <p>I'm a full-time student. <i><span class="highlight">Night Owl</span></i>.</p>
-                <p><span class="highlight">Wanna get in touch?</span> Simply click <a onclick="redirectContact()"><span class="highlight">here</span></a> to connect with me <b>anytime, anywhere!</b></p>
-            </div>
-
-            <!-- Past Educational Experience -->
-            <div class="gap-top gap-bottom">
-                <h3>Past <span class="highlight">Educational</span> Records</h3>
-                <ul>
-                    <li><span class="highlight">HSC a.k.a. Class X</span> - 2020 | Central Board of Secondary Education</li>
-                    <li><span class="highlight">SSC a.k.a. Class XII</span> - 2022 | Central Board of Secondary Education</li>
-                    <li><span class="highlight">SSC a.k.a. Class XII</span> - 2023 | National Institute of Open Schooling</li>
-                </ul>
-                <p class="note">... and much more to be listed in the coming future!</p>
-            </div>
-            <!-- Contributions -->
-            <div>
-                <h3>Recent Contributions to <span class="highlight">Open-Sourced Projects</span></h3>
-                <ul>
-                    <li>Hindi (HI) and Punjabi (PA) translator for <a href="https://www.customrp.xyz"><span class="highlight">CustomRP</span></a>.</li>
-                </ul>
-                <p class="note">... and much more to be listed in the coming future!</p>
-            </div>
-
-            <!-- Closing Note -->
-            <div class="gap-top gap-bottom">
-                <h3 id="lh-low"><span class="highlight">THANKS A LOT</span> for discovering my small universe!</h3>
-                <p id="lh-low" class="note postscript">(P.S.: I just begun my journey, and hopefully it'll keep getting bigger!)</p>
-            </div>
-            <div>
-                <h3 id="lh-low"><span class="highlight">शायरी</span> of the visit!</h3>
-                <p class="note">"<span id="शायरीDisplay" class="शायरी highlight"></span>"</p>
-            </div>
-
-            <!-- ShareThis -->
-            <div id="lh-low">
-                <h6 class="center"><span class="highlight">SHARE</span> the journey <span class="highlight">within your network</span></h6>
-                <div class="sharethis-inline-share-buttons grid"></div>
-            </div>
-
-            <!-- Suggestion -->
-            <div>
-                <h6 class="center"><span class="highlight">SHARE</span> your thoughts about the current UI by clicking <a href="https://tally.so/r/wdaZqD"><span class="highlight">HERE</span></a></h6>
-            </div>
-        </article>
     </div>
 </body>
-
-</html>
