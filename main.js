@@ -33,8 +33,8 @@ function updateशायरी() {
 
 document.addEventListener("DOMContentLoaded", updateशायरी);
 
-/* redirectContact Logic */
-function redirectContact() {
+/* redirectWeb Logic */
+function redirectWeb() {
     var currentDomain = window.location.hostname;
 
     if (currentDomain === 'www.mridungupta.tech') {
