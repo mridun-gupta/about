@@ -66,7 +66,7 @@ function redirectWeb() {
     }
 }
 
-/* Fetch specialEvents*/
+/* Fetch specialEvents */
 document.addEventListener("DOMContentLoaded", function () {
     const eventsDisplay = document.getElementById('special-events');
     const eventsList = [
