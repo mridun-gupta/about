@@ -41,26 +41,26 @@ document.addEventListener("DOMContentLoaded", updateशायरी);
 function redirectWeb() {
     var currentDomain = window.location.hostname;
 
-    if (currentDomain === 'www.mridungupta.tech') {
-        window.location.href = 'https://contact.mridungupta.tech';
-    } else if (currentDomain === 'www.mridungupta.me') {
-        window.location.href = 'https://contact.mridungupta.me';
-    } else if (currentDomain === 'www.mridungupta.eu.org') {
-        window.location.href = 'https://contact.mridungupta.eu.org';
-    } else if (currentDomain === 'www.mridungupta.live') {
-        window.location.href = 'https://contact.mridungupta.live';
-    } else if (currentDomain === 'www.mridungupta.co') {
-        windows.location.href = 'https://contact.mridungupta.co';
-    } else if (currentDomain === 'mridungupta.tech') {
-        windows.location.href = 'https://contact.mridungupta.tech';
-    } else if (currentDomain === 'mridungupta.me') {
-        window.location.href = 'https://contact.mridungupta.me';
-    } else if (currentDomain === 'mridungupta.eu.org') {
-        window.location.href = 'https://contact.mridungupta.eu.org';
-    } else if (currentDomain === 'mridungupta.live') {
-        window.location.href = 'https://contact.mridungupta.live';
-    } else if (currentDomain === 'mridungupta.co') {
-        windows.location.href = 'https://contact.mridungupta.co';
+    if (currentDomain === "www.mridungupta.tech") {
+        window.location.href = "https://contact.mridungupta.tech";
+    } else if (currentDomain === "www.mridungupta.me") {
+        window.location.href = "https://contact.mridungupta.me";
+    } else if (currentDomain === "www.mridungupta.eu.org") {
+        window.location.href = "https://contact.mridungupta.eu.org";
+    } else if (currentDomain === "www.mridungupta.live") {
+        window.location.href = "https://contact.mridungupta.live";
+    } else if (currentDomain === "www.mridungupta.co") {
+        windows.location.href = "https://contact.mridungupta.co";
+    } else if (currentDomain === "mridungupta.tech") {
+        windows.location.href = "https://contact.mridungupta.tech";
+    } else if (currentDomain === "mridungupta.me") {
+        window.location.href = "https://contact.mridungupta.me";
+    } else if (currentDomain === "mridungupta.eu.org") {
+        window.location.href = "https://contact.mridungupta.eu.org";
+    } else if (currentDomain === "mridungupta.live") {
+        window.location.href = "https://contact.mridungupta.live";
+    } else if (currentDomain === "mridungupta.co") {
+        windows.location.href = "https://contact.mridungupta.co";
     } else {
         console.log("Sorry! This isn't the real website run by 'Mridun Gupta'. Double check the official website for authenticity.");
     }
@@ -68,7 +68,7 @@ function redirectWeb() {
 
 /* Fetch specialEvents */
 document.addEventListener("DOMContentLoaded", function () {
-    const eventsDisplay = document.getElementById('special-events');
+    const eventsDisplay = document.getElementById("special-events");
     const eventsList = [
         "on the smooth landing of LVM3-M4 / Chandrayaan-3",
         "on the awesome launch of PSLV-C57 / Aditya L1",
