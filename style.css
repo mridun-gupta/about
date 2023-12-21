@@ -173,6 +173,12 @@ footer {
     padding: 1rem 0;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
 /* @media Queries */
 @media (max-width: 768px) {
     html {
