@@ -1,20 +1,34 @@
 /* class-based and id-based Stylings */
-.gap-top {
-    margin-top: 5rem;
+#ticker {
+    background-color: #AD88F2;
+    padding: 0;
+    margin: 0;
+    font-size: 2.5rem;
+    border-radius: 0.2rem;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
 }
 
-.gap-bottom {
-    margin-bottom: 5rem;
+.announcements {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    transform: translate(-2560px);
+    animation: scroll 25s infinite linear;
 }
 
-.highlight {
-    color: #AD88F2 !important;
+.announcements span:nth-child(2) {
     font-weight: bold;
 }
 
-.note {
-    margin-left: 1.5rem;
-    font-weight: bold;
+#IN-flag {
+    background-image: url("https://knowindia.india.gov.in/assets/images/national_flag_inner.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .grid {
@@ -23,17 +37,9 @@
     padding-bottom: 0.5rem;
 }
 
-#lh-low {
-    line-height: 0.5;
-}
-
 .postscript {
     font-size: 1rem;
     margin-left: 1rem;
-}
-
-.center {
-    text-align: center;
 }
 
 .शायरी {
@@ -41,10 +47,8 @@
     white-space: pre-line;
 }
 
-#xiaomi-logo,
-#pw-logo {
-    width: 2.5rem;
-    margin-right: 0.5rem;
+.center {
+    text-align: center;
 }
 
 .short-introduction {
@@ -58,35 +62,31 @@
     margin-right: 0.5rem;
 }
 
-.announcements {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    transform: translate(-2560px);
-    animation: scroll 25s infinite linear;
+#xiaomi-logo,
+#pw-logo {
+    width: 2.5rem;
+    margin-right: 0.5rem;
 }
 
-#IN-flag {
-    background-image: url("https://knowindia.india.gov.in/assets/images/national_flag_inner.jpg");
-    background-repeat: repeat;
-    background-size: contain;
-    -webkit-background-clip: text;
-    color: transparent;
+#lh-low {
+    line-height: 0.5;
 }
 
-#ticker {
-    background-color: #AD88F2;
-    padding: 0;
-    margin: 0;
-    font-size: 2.5rem;
-    border-radius: 0.2rem;
-    white-space: nowrap;
-    position: sticky;
-    top: 0;
-    overflow: hidden;
+.highlight {
+    color: #AD88F2 !important;
+    font-weight: bold;
 }
 
-.announcements span:nth-child(2) {
+.gap-top {
+    margin-top: 5rem;
+}
+
+.gap-bottom {
+    margin-bottom: 5rem;
+}
+
+.note {
+    margin-left: 1.5rem;
     font-weight: bold;
 }
 
@@ -128,6 +128,11 @@ html {
     user-select: none;
 }
 
+html::selection {
+    background-color: #AD88F2;
+    color: #FFFFFF;
+}
+
 body {
     background-size: 5rem 5rem;
     background-image: radial-gradient(circle, #808F85 0.125rem, #000000 0.1rem) !important;
@@ -158,11 +163,6 @@ h6 {
     font-size: 1.5rem;
 }
 
-html::selection {
-    background-color: #AD88F2;
-    color: #FFFFFF;
-}
-
 footer {
     position: fixed;
     left: 0;
@@ -180,18 +180,18 @@ footer {
         padding: 2rem 0vh 4rem;
     }
 
-    #lh-low {
-        line-height: 1;
-    }
-
     article {
         padding: 7.5rem 0rem 15rem;
     }
+    
+    #lh-low {
+        line-height: 1;
+    }    
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 2560px) {
     html {
-        font-size: 125%;
+        font-size: 150%;
     }
 }
 
