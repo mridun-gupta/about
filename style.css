@@ -128,7 +128,7 @@ html {
 }
 
 html::selection {
-    background-color: #AD88F2;
+    background: #AD88F2;
     color: #FFFFFF;
 }
 
@@ -196,7 +196,7 @@ a:hover {
 
     article {
         padding: 7.5rem 0rem 15rem;
-    }  
+    }
 }
 
 @media (min-width: 2560px) {

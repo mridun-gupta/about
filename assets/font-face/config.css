@@ -86,7 +86,7 @@
         url("assets/MiSans Devanagari/woff2/MiSansDevanagari-Normal.woff2") format("woff2"),
         url("assets/MiSans Devanagari/woff2/MiSansDevanagari-Semibold.woff2") format("woff2"),
         url("assets/MiSans Devanagari/woff2/MiSansDevanagari-Thin.woff2") format("woff2"),
-        url("assets/MiSans Devanagari/woff2/MiSansDevanagari.woff2") format("woff2")
+        url("assets/MiSans Devanagari/woff2/MiSansDevanagari.woff2") format("woff2"),
         url("assets/MiSans Devanagari/woff2/MiSansDevanagariVF.woff2") format("woff2")
 }
 
@@ -156,7 +156,7 @@
         url("assets/MiSans Latin/ttf/MiSansLatin-Medium.ttf") format("TrueType"),
         url("assets/MiSans Latin/ttf/MiSansLatin-Normal.ttf") format("TrueType"),
         url("assets/MiSans Latin/ttf/MiSansLatin-Regular.ttf") format("TrueType"),
-        url("assets/MiSans Latin/ttf/MiSansLatin-Semibold.ttf") format("TrueType")
+        url("assets/MiSans Latin/ttf/MiSansLatin-Semibold.ttf") format("TrueType"),
         url("assets/MiSans Latin/ttf/MiSansLatin-Thin.ttf") format("TrueType"),
         url("assets/MiSans Latin/woff/MiSansLatin-Bold.woff") format("woff"),
         url("assets/MiSans Latin/woff/MiSansLatin-Demibold.woff") format("woff"),
