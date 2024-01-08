@@ -1,6 +1,6 @@
 /* class-based and id-based Stylings */
-#ticker {
-    background-color: #AD88F2;
+.ticker {
+    background: #AD88F2;
     padding: 0;
     margin: 0;
     font-size: 2.5rem;
@@ -11,7 +11,7 @@
     overflow: hidden;
 }
 
-.announcements {
+#announcements {
     display: flex;
     list-style: none;
     margin: 0;
@@ -19,16 +19,20 @@
     animation: scroll 25s infinite linear;
 }
 
-.announcements span:nth-child(2) {
+#announcements span:nth-child(2) {
     font-weight: bold;
 }
 
-#IN-flag {
-    background-image: url("https://knowindia.india.gov.in/assets/images/national_flag_inner.jpg");
+.IN-flag {
+    background: url("https://knowindia.india.gov.in/assets/images/national_flag_inner.jpg");
     background-repeat: repeat;
     background-size: contain;
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.wrapper {
+    background: #000000;
 }
 
 .grid {
@@ -62,18 +66,13 @@
     margin-right: 0.5rem;
 }
 
-#xiaomi-logo,
-#pw-logo {
+.logo {
     width: 2.5rem;
     margin-right: 0.5rem;
 }
 
-#lh-low {
-    line-height: 0.5;
-}
-
 .highlight {
-    color: #AD88F2 !important;
+    color: #AD88F2;
     font-weight: bold;
 }
 
@@ -110,7 +109,7 @@
 
 /* General Stylings */
 * {
-    font-family: "Inter", sans-serif;
+    font-family: "MiSans", "MiSans Devanagari", "MiSans Gurmukhi", "MiSans Latin", sans-serif;
     color: #FFFFFF;
     box-sizing: border-box;
     text-decoration: none;
@@ -135,7 +134,7 @@ html::selection {
 
 body {
     background-size: 5rem 5rem;
-    background-image: radial-gradient(circle, #808F85 0.125rem, #000000 0.1rem) !important;
+    background-image: radial-gradient(circle, #808F85 0.125rem, #000000 0.1rem);
 }
 
 article {
@@ -164,19 +163,28 @@ h6 {
 }
 
 footer {
+    border-top: solid 0.25rem #AD88F2;
+    font-size: 1.25rem;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #000000;
-    text-align: center;
-    padding: 1rem 0;
+    height: 3vh;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a {
     text-decoration: none;
     cursor: pointer;
     color: inherit;
+}
+
+a:hover {
+    text-decoration: underline 0.25rem #FFFFFF;
+    transition: text-decoration 100ms ease;
 }
 
 /* @media Queries */
@@ -188,11 +196,7 @@ a {
 
     article {
         padding: 7.5rem 0rem 15rem;
-    }
-    
-    #lh-low {
-        line-height: 1;
-    }    
+    }  
 }
 
 @media (min-width: 2560px) {
