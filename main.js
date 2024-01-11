@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
         "on the smooth landing of LVM3-M4/Chandrayaan-3",
         "on the smooth positioning of PSLV-C57/Aditya L1",
         "for the fastest 5G rollout globally",
-        "on the inauguration of the world's largest meditation center - 'Swarved Mahamandir',",
-        "on the inauguration of the world's longest river cruise - 'MG Ganga Vilas',",
-        "for being the world's fastest-growing major economy,",
-        "for being at the top in digital payments globally,",
+        "on the inauguration of the world's largest meditation center - 'Swarved Mahamandir'",
+        "on the inauguration of the world's longest river cruise - 'MG Ganga Vilas'",
+        "for being the world's fastest-growing major economy",
+        "for being at the top in digital payments globally",
         "on the inauguration of the world's largest office building - 'Surat Diamond Bourse'"
     ];
 
