@@ -117,7 +117,6 @@
 
 html {
     overflow-x: hidden;
-    font-size: 62.5%;
     cursor: default;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -190,18 +189,11 @@ a:hover {
 /* @media Queries */
 @media (max-width: 768px) {
     html {
-        font-size: 50%;
         padding: 2rem 0vh 4rem;
     }
 
     article {
         padding: 7.5rem 0rem 15rem;
-    }
-}
-
-@media (min-width: 2560px) {
-    html {
-        font-size: 150%;
     }
 }
 
