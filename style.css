@@ -1,6 +1,7 @@
 /* class-based and id-based Stylings */
 .ticker {
-    background: #AD88F2;
+    background: #000000;
+    border-bottom: 0.25remsolid 0.25rem #AD88F2;
     padding: 0;
     margin: 0;
     font-size: 2.5rem;
@@ -15,8 +16,10 @@
     display: flex;
     list-style: none;
     margin: 0;
-    transform: translate(-2560px);
+    padding: 0;
+    transform: translate(100vw);
     animation: scroll 25s infinite linear;
+    width: fit-content;
 }
 
 #announcements span:nth-child(2) {
@@ -24,7 +27,7 @@
 }
 
 .IN-flag {
-    background: url("https://knowindia.india.gov.in/assets/images/national_flag_inner.jpg");
+    background-image: url("https://knowindia.india.gov.in/assets/images/national_flag_inner.jpg");
     background-repeat: repeat;
     background-size: contain;
     -webkit-background-clip: text;
@@ -36,7 +39,7 @@
 }
 
 .grid {
-    border: #AD88F2 0.2rem solid;
+    border: #AD88F2 0.2rem 0.25remsolid;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
@@ -162,17 +165,26 @@ h6 {
 }
 
 footer {
-    border-top: solid 0.25rem #AD88F2;
-    font-size: 1.25rem;
+    border-top: 0.25remsolid 0.25rem #AD88F2;
+    font-size: 1rem;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 3vh;
+    height: 2.5vh;
     background: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer img {
+    margin: 0;
+    padding: 0;
+    width: 1rem;
+    display: inline;
+    vertical-align: middle;
+    transition: none;
 }
 
 a {
