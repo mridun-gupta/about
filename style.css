@@ -129,7 +129,7 @@ html {
     user-select: none;
 }
 
-html::selection {
+*::selection {
     background: #AD88F2;
     color: #FFFFFF;
 }
