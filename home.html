@@ -34,17 +34,18 @@
     <!-- JS Scripts -->
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=64bc29501734a80012bd6046&product=sop" async="async"></script>
+    <script type="text/javascript" src="https://tally.so/widgets/embed.js" async="async"></script>
     <!-- Firebase Cloud Messaging -->
-    <script>
+    <script type="text/javascript">
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {
                 navigator.serviceWorker.register("firebase-messaging-sw.js");
             });
         }
     </script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-messaging-compat.js"></script>
-    <script src="firebase-messaging-configuration.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/9.22.0/firebase-messaging-compat.js"></script>
+    <script type="text/javascript" src="firebase-messaging-configuration.js"></script>
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
         (function (c, l, a, r, i, t, y) {
@@ -130,7 +131,7 @@
                 <!-- Suggestion -->
                 <div>
                     <h6 class="center"><span class="highlight">SHARE</span> your thoughts about the current UI by clicking
-                        <a href="https://tally.so/r/wdaZqD"><span class="highlight">HERE</span></a></h6>
+                        <a href="#tally-open=wdaZqD&tally-layout=modal&tally-align-left=1&tally-hide-title=1&tally-auto-close=5000"><span class="highlight">HERE</span></a></h6>
                 </div>
             </div>
         </article>

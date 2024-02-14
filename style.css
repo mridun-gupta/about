@@ -118,6 +118,11 @@
     text-decoration: none;
 }
 
+*::selection {
+    background: #AD88F2;
+    color: #FFFFFF;
+}
+
 html {
     overflow-x: hidden;
     cursor: default;
@@ -127,11 +132,6 @@ html {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-*::selection {
-    background: #AD88F2;
-    color: #FFFFFF;
 }
 
 body {
