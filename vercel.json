@@ -3,7 +3,7 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "destination": "/404/"
+      "destination": "404.html"
     }
   ]
 }
