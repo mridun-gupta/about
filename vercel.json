@@ -1,10 +1,9 @@
 {
   "cleanUrls": true,
-  "redirects": [
+  "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/404.html",
-      "statusCode": 404
+      "destination": "/404.html"
     }
   ]
 }
