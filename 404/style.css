@@ -1,0 +1,107 @@
+/* class-based and id-based Stylings */
+.message-two {
+    display: none;
+}
+
+.timer {
+    animation: blink 0.5s infinite;
+    font-weight: bold;
+}
+
+/* General Stylings */
+html,
+body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    width: 75vw;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "MiSans Devanagari";
+    font-family: "MiSans Latin";
+    background: #000000;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+h2 span {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #AD88F2;
+}
+
+section {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+}
+
+img {
+    background: white;
+    padding: 1rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+section section {
+    padding-left: 1.25rem;
+}
+
+/* @media Queries */
+@media (max-width: 768px) {
+    /* class-based and id-based Stylings */
+    .message-one {
+        display: none;
+    }
+
+    .message-two {
+        display: block;
+    }
+
+    /* General Stylings */
+    img {
+        display: none;
+    }
+
+    section section {
+        padding-left: 0;
+    }
+}
+
+/* @keyframes Queries */
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 25%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
