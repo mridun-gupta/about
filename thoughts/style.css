@@ -1,0 +1,43 @@
+/* class-based and id-based Stylings */
+.thought-list a {
+    margin-left: 0.5rem;
+}
+
+.thought-list li:not(:last-child) {
+    padding-bottom: 1rem;
+}
+
+.about-thought .highlight {
+    font-size: 3rem;
+}
+
+.date-author {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 1rem;
+    margin-top: -2rem;
+}
+
+.start-quote {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: xx-large;
+}
+
+.end-quote {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-size: xx-large;
+}
+
+.thought-text h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.blink {
+    animation: blink 2s infinite;
+}
