@@ -1,5 +1,5 @@
 /* timer Logic */
-let timeRemaining = 1000;
+let timeRemaining = 10;
 
 function updateTimer() {
     const timerElements = document.querySelectorAll('.timer');

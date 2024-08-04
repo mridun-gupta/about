@@ -22,10 +22,6 @@
     width: fit-content;
 }
 
-#announcements span:nth-child(2) {
-    font-weight: bold;
-}
-
 .IN-flag {
     background-image: url("https://knowindia.india.gov.in/assets/images/national_flag_inner.jpg");
     background-repeat: repeat;
@@ -60,8 +56,10 @@
 
 .short-introduction {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: 1rem;
+    margin-top: -2rem;
 }
 
 .spacer {
@@ -69,9 +67,35 @@
     margin-right: 0.5rem;
 }
 
-.logo {
-    width: 2.5rem;
+.icon {
+    font-family: 'MiIcon';
+    font-size: 2.5rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+}
+
+.xiaomi::before {
+    content: "\e663";
+}
+
+.redmi::before {
+    content: "\e660";
+}
+
+.poco::before {
+    content: "\e661";
+}
+
+.short-introduction .highlight {
+    font-size: 3rem;
+}
+
+.oppo {
+    margin-left: 0.5rem;
     margin-right: 0.5rem;
+    width: 5rem;
 }
 
 .highlight {
@@ -90,6 +114,159 @@
 .note {
     margin-left: 1.5rem;
     font-weight: bold;
+}
+
+.ongoing::before {
+    content: "Ongoing";
+    font-weight: normal;
+    animation: blink 1s infinite;
+    z-index: -1;
+}
+
+.overlay {
+    position: fixed;
+    cursor: default;
+    background: #000000;
+    overflow: hidden;
+}
+
+.last-updated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 1rem;
+    bottom: 2.5rem;
+    border: solid 0.25rem #AD88F2;
+    border-radius: 1rem;
+    width: 18rem;
+    height: 5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.last-updated p,
+.feedback p {
+    margin: 0;
+    padding: 0;
+}
+
+.last-updated p:nth-child(1)::before {
+    content: "LAST UPDATED";
+}
+
+.last-updated p:nth-child(2) {
+    color: #AD88F2;
+    font-weight: bold;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 1rem;
+    bottom: 2.5rem;
+    border: solid 0.25rem #AD88F2;
+    border-radius: 1rem;
+    width: 18rem;
+    height: 5rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    z-index: 2;
+}
+
+.feedback p:nth-child(1)::before {
+    content: "SHARE YOUR THOUGHTS";
+}
+
+.feedback a:nth-child(2) {
+    color: #AD88F2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.mobile {
+    display: none;
+    right: 1rem;
+    bottom: 2.5rem;
+    border: solid 0.25rem #AD88F2;
+    border-radius: 1rem;
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.mobile a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.invalid-redirect {
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.redirect-container,
+.warning {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.redirect-container div {
+    display: flex;
+    justify-content: center;
+}
+
+.redirect-container button {
+    outline: none;
+    border: none;
+    transition: all ease 1s;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.redirect-container a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.warning p:nth-child(1)::before {
+    content: "WARNING";
+    color: #FF0000;
+    font-size: 5rem;
+}
+
+.redirect-container p {
+    color: #AD88F2;
+    font-size: 2.5rem;
+}
+
+.warning p:nth-child(3) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: blink 2s infinite;
+}
+
+.warning span:nth-child(4) {
+    margin-left: 5rem;
 }
 
 /* Scrollbar Stylings */
@@ -112,7 +289,8 @@
 
 /* General Stylings */
 * {
-    font-family: "MiSans", "MiSans Devanagari", "MiSans Gurmukhi", "MiSans Latin", sans-serif;
+    font-family: "MiSans Devanagari";
+    font-family: "MiSans Latin";
     color: #FFFFFF;
     box-sizing: border-box;
     text-decoration: none;
@@ -125,13 +303,6 @@
 
 html {
     overflow-x: hidden;
-    cursor: default;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 body {
@@ -143,13 +314,6 @@ article {
     padding: 7.5rem 50vh 15rem;
     font-size: 1.5rem;
     line-height: 1.75;
-}
-
-h1,
-h2,
-h3,
-h6 {
-    font-weight: 800;
 }
 
 h1 {
@@ -191,6 +355,17 @@ a:hover {
 
 /* @media Queries */
 @media (max-width: 768px) {
+    /* class-based and id-based Stylings */
+    .last-updated,
+    .feedback {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    /* General Stylings */
     html {
         padding: 2rem 0vh 4rem;
     }
@@ -208,5 +383,19 @@ a:hover {
 
     to {
         transform: translate(-100%);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 25%;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }

@@ -33,9 +33,7 @@
 
     <!-- JS Scripts -->
     <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=64bc29501734a80012bd6046&product=sop" async="async"></script>
-    <script type="text/javascript" src="https://tally.so/widgets/embed.js" async="async"></script>
-    <!-- Firebase Cloud Messaging -->
+    <!-- Google Firebase -->
     <script type="text/javascript">
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {
@@ -43,9 +41,9 @@
             });
         }
     </script>
-    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/9.22.0/firebase-messaging-compat.js"></script>
-    <script type="text/javascript" src="firebase-messaging-configuration.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app-compat.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/firebasejs/10.12.3/firebase-messaging-compat.js"></script>
+    <script type="text/javascript" src="firebase-config.js"></script>
     <!-- Microsoft Clarity -->
     <script type="text/javascript">
         (function (c, l, a, r, i, t, y) {
@@ -57,87 +55,24 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Announcements -->
-        <div class="ticker">
-            <ul id="announcements">
-                <li>Congratulations, <b><span class="IN-flag">REPUBLIC OF BHARAT</span></b>, <span id="special-events"></span>!</li>
-            </ul>
+    <div class="redirect-container">
+        <p>EXPLORE MY THOUGHTS or KNOW ABOUT ME</p>
+        <div>
+            <a href="thoughts/index.html"><button type="button">Dive Into My Blog</button></a>
+            <a href="about.html"><button type="button">Discover About Me</button></a>
         </div>
-        <article dir="ltr">
-            <div class="wrapper">
-                <!-- Introduction -->
-                <div id="introduction">
-                    <h1><span class="highlight">मृदुन गुप्ता</span> (Mridun Gupta)</h1>
-                    <h6 class="short-introduction">
-                        <img class="logo" src="https://i01.appmifile.com/webfile/globalimg/mobile/logo/mi.png" alt="Xiaomi Logo"><span class="highlight">Fan</span>
-                        <span class="spacer">|</span>
-                        <span class="highlight">Techno Geek</span>
-                        <span class="spacer">|</span>
-                        <img class="logo" src="https://www.pw.live/study/assets/icons/logow.png" alt="PW Logo"><span class="highlight">Student</span>
-                    </h6>
-                    <p>I'm a newbie web developer, chilling in the <span class="highlight">Republic of Bharat</span>. <i><span class="highlight">Love Coding</span></i>.</p>
-                    <p>I'm a full-time student. <i><span class="highlight">Night Owl</span></i>.</p>
-                    <p><span class="highlight">Wanna get in touch?</span> Simply click <a onclick="redirectWeb()"><span class="highlight">here</span></a> to connect with me <b>anytime, anywhere!</b></p>
-                </div>
-
-                <!-- Past Educational Experience -->
-                <div id="educational-experience" class="gap-top gap-bottom">
-                    <h3>Past <span class="highlight">Educational</span> Records</h3>
-                    <ul>
-                        <li><span class="highlight">HSC a.k.a. Class X</span> - 2020 | Central Board of Secondary Education</li>
-                        <li><span class="highlight">SSC a.k.a. Class XII</span> - 2022 | Central Board of Secondary Education</li>
-                        <li><span class="highlight">SSC a.k.a. Class XII</span> - 2023 | National Institute of Open Schooling</li>
-                    </ul>
-                    <p class="note">... and much more to be listed in the coming future!</p>
-                </div>
-
-                <!-- Community Involvement and Roles -->
-                <div id="community-roles" class="gap-top gap-bottom">
-                    <h3><span class="highlight">Community Involvement</span> and <span class="highlight">Roles</span></h3>
-                    <ul>
-                        <li><span class="highlight">Core Team Member</span> 2022 - MiFC Rohtak, Xiaomi India</li>
-                        <li><span class="highlight">Core Team Member</span> 2022/2023 - MiFC Haryana, Xiaomi India</li>
-                        <li><span class="highlight">President</span> 2023 - MiFC Haryana, Xiaomi India</li>
-                        <li><span class="highlight">Intern Feedback Team Member</span> 2024 - Xiaomi Global Community</li>
-                    </ul>
-                </div>
-
-                <!-- Contributions -->
-                <div id="contributions">
-                    <h3>Recent Contributions to <span class="highlight">Open-Sourced Projects</span></h3>
-                    <ul>
-                        <li>Hindi (HI) and Punjabi (PA) translator for <a href="https://www.customrp.xyz"><span class="highlight">CustomRP</span></a>.</li>
-                    </ul>
-                    <p class="note">... and much more to be listed in the coming future!</p>
-                </div>
-
-                <!-- Closing Note -->
-                <div class="gap-top gap-bottom">
-                    <h3><span class="highlight">THANKS A LOT</span> for discovering my small universe!</h3>
-                    <p class="note postscript">(P.S.: I just begun my journey, and hopefully it"ll keep getting bigger!)</p>
-                </div>
-                <div>
-                    <h3><span class="highlight">शायरी</span> of the visit!</h3>
-                    <p class="note">"<span id="शायरीDisplay" class="शायरी highlight"></span>"</p>
-                </div>
-
-                <!-- ShareThis -->
-                <div>
-                    <h6 class="center"><span class="highlight">SHARE</span> the journey <span class="highlight">within your network</span></h6>
-                    <div class="sharethis-inline-share-buttons grid"></div>
-                </div>
-
-                <!-- Suggestion -->
-                <div>
-                    <h6 class="center"><span class="highlight">SHARE</span> your thoughts about the current UI by clicking
-                        <a href="#tally-open=wdaZqD&tally-layout=modal&tally-align-left=1&tally-hide-title=1&tally-auto-close=5000"><span class="highlight">HERE</span></a></h6>
-                </div>
-            </div>
-        </article>
-        <footer>
-            <p>&copy; 2023 - 2024 | <a onclick="redirectWeb()"><b><span class="highlight">Mridun Gupta</span></b></a> (Developer of the Website - "<a type="button" href="https://sponsor.mridun.co">&#x2661; | Sponsor</a>")</p>
-        </footer>
+    </div>
+    <!-- Overlays -->
+    <div id="invalid-redirect" class="invalid-redirect overlay" onclick="dismissOverlay()">
+        <div class="warning">
+            <p></p>
+            <p>Sorry! This isn't the real website run by 'Mridun Gupta'. Double check the official website for authenticity.</p>
+            <p>Click anywhere on the screen to dismiss this warning.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 - 2024 | <a onclick="redirectWeb()"><b><span class="highlight">Mridun Gupta</span></b></a> (Developer of the Website - "<a type="button" href="https://sponsor.mridun.co">&#x2661; | Sponsor</a>")</p>
+    </footer>
     </div>
 </body>
 

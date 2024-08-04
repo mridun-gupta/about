@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "MiIcon";
+    src:
+        url("fonts/MiIcon.otf") format("otf"),
+        url("fonts/MiIcon.ttf") format("TrueType"),
+        url("fonts/MiIcon.woff") format("woff"),
+        url("fonts/MiIcon.woff2") format("woff2"),
+}

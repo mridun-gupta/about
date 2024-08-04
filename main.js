@@ -98,6 +98,12 @@ function redirectWeb() {
     } else if (currentDomain === "mridungupta.co") {
         windows.location.href = "https://contact.mridungupta.co";
     } else {
+        document.getElementById("invalid-redirect").style.display = "block";
         console.log("Sorry! This isn't the real website run by 'Mridun Gupta'. Double check the official website for authenticity.");
     }
 };
+
+/* dismissOverlay Logic */
+function dismissOverlay() {
+    document.getElementById("invalid-redirect").style.display = "none";
+}
