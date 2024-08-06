@@ -1,15 +1,15 @@
 /* timer Logic */
-let timeRemaining = 10;
+let timeRemaining = 10000;
 
 function updateTimer() {
-    const timerElements = document.querySelectorAll('.timer');
+    const timerElements = document.querySelectorAll(".timer");
     if (timeRemaining > 0) {
         timeRemaining--;
         timerElements.forEach(timerElement => {
             timerElement.textContent = timeRemaining;
         });
     } else {
-        window.location.href = 'https://www.mridungupta.eu.org/';
+        window.location.href = "";
     }
 }
 

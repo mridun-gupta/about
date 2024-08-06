@@ -68,7 +68,7 @@
 }
 
 .icon {
-    font-family: 'MiIcon';
+    font-family: "MiIcon";
     font-size: 2.5rem;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -263,10 +263,6 @@
     font-size: 1.5rem;
     font-weight: bold;
     animation: blink 2s infinite;
-}
-
-.warning span:nth-child(4) {
-    margin-left: 5rem;
 }
 
 /* Scrollbar Stylings */
